@@ -21,9 +21,13 @@ Height of multiplication table: 8
   7  14  21  28  35  42  49  56  63  70
   8  16  24  32  40  48  56  64  72  80
 """
-w=int(input("Width of multiplication table: "))
-h=int(input("Height of multiplication table: "))
-for i in range(1,w+1):
-    print(i)
-for k in range (1,h+1):
-    print(k)
+w = int(input("Width of multiplication table: "))
+
+h = int(input("Height of multiplication table: "))
+k = 1
+while k<=h :
+    squirrel = list (range (k, k*w + 1, k))
+    avacado = " ".join(str(x) for x in squirrel)
+    print(avacado)
+    
+    k = k + 1
